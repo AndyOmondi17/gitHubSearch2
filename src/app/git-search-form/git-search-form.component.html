@@ -1,14 +1,26 @@
-<div class="col">
+<!--<div>
     <div class="input-group mb-3">
-       
+       <form  #searchForm='ngForm' >
       <input type="text" class="form-control bg-transparent col-sm-6 offset-3" placeholder="Search here" value="reset" id ="" aria-label="user" aria-describedby="basic-addon2" name="userName" [(ngModel)]="userName" #userName='ngModel' required>
       <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
         <p>User Name is required</p>
       </div>
       <div class="input-group-append">
-        <button class="btn btn-outline-success" type ="button"(click)="user()"   ng-click="">Search</button>
+        <button class="btn btn-outline-success" type ="button"(click)="user()">Search</button>
       </div>
+    </form>
     </div>
+  </div>-->
+  <div class="container-fluid">
+      <form class="form-inline" >
+              <input type="text" class="form-control" [(ngModel)]="userName" name="userName" id="">
+              <br>
+              <button type="submit" class="btn btn-danger" (click)="user()">Search</button>
+  
+      </form>
+      
+  
+  
   </div>
 
 

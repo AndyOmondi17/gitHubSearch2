@@ -7,7 +7,7 @@ import { Repository } from './repository';
 @Injectable({
   providedIn: 'root'
 })
-export class HttpServiceService {
+export class HttpServiceService{
 
   userProfile: Users[]=[];
   userRepository: Repository[]=[];
