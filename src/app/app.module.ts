@@ -8,13 +8,15 @@ import { GitSearchFormComponent } from './git-search-form/git-search-form.compon
 import { UserSearchComponent } from './user-search/user-search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { DateCounterPipe } from './date-counter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     GitSearchFormComponent,
-    UserSearchComponent
+    UserSearchComponent,
+    DateCounterPipe
   ],
   imports: [
     BrowserModule,
