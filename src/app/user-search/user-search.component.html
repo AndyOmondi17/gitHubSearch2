@@ -1,11 +1,13 @@
+
 <div class="container">
-    <div class="row">
-        
-                <div>
-                        <app-git-search-form (emitUsers)="myName($event)"></app-git-search-form>
+    <div class="row" id="section1">
+            
+                <div>   
+                    <h1>GIT SEARCH APPLICATION</h1>    
+                    <app-git-search-form (emitUsers)="myName($event)"></app-git-search-form>
                         <div *ngFor='let theUser of theUsers'>
                             <p>Name: {{theUser.name}}<br>GitHub name: {{theUser.login}}</p>
-                            <img src="{{theUser.avatar_url}}" alt=""><br>
+                                <img id="im" src="{{theUser.avatar_url}}" alt=""><br>
                             <p>Bio: {{theUser.Bio}}</p><br>
                             <p>Public repositories {{theUser.public_repos}}</p>
                         </div>
