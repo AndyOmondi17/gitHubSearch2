@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Users } from '../users';
 import { Repository } from '../repository';
+import { HttpServiceService } from '../http-service.service';
 
 @Component({
   selector: 'app-user-search',
